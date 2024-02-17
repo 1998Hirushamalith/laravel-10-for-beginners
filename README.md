@@ -68,3 +68,30 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # Laravel 10 Course
 
 ## Get this course from Bitfumes youtube channel
+
+### Project Idea from scratch -  laravel 10
+
+1. User can create a new help ticket
+2. Admin can reply on help ticket
+3. Admin can reject or resolve the ticket
+4. When admin update on the ticket then user will get one notification via email
+   that ticket status is updated
+5. User can give ticket title and description
+6. User can upload a document like pdf or image
+
+#### Table Structure
+    
+    01.Tickets
+
+1. title( string ) {required}
+2. description(text) {required}
+3. status(open {default}, resolved, rejected)
+4. attachment(string) {nullable}
+5. user_id {required} filled by laravel
+6. status_changed_by_id {nullable}
+
+    02.Replies
+
+1. body(text) {required}
+2. user_id {required} filled by laravel
+3. ticket_id {required} filled by laravel

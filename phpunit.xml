@@ -30,3 +30,8 @@
         <env name="TELESCOPE_ENABLED" value="false"/>
     </php>
 </phpunit>
+
+<!-- whenever you write the test in laravel we need to write test in phpunit
+phpunit is the framework for phptest and have some confirguration file
+for the php unit so this is usefull when you writing the test
+ -->
